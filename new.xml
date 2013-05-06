@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<review>	
+	<Address>29 Ririnui Place</Address>
+	<City>Tauranga</City>
+	<Comment>Very nice Food</Comment>
+	<Date-of-Visit type ="date"></Date-of-Visit>	
+	<Phone>075442836</Phone>
+	<Rating type = "decimal">8</Rating>
+	<Member>Glen</Member>	
+	<Venue-Name>Volare</Venue-Name>	
+</review>
+

@@ -1,0 +1,65 @@
+<%= form_for(@review) do |f| %>
+
+  <% if @review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+      <ul>
+      <% @review.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field1">
+    <p><%= f.label :Member %>
+    <%= f.text_field :Member %></p>
+  </div>
+
+  <div class="field2">
+    <p><%= f.label :Rating %>
+    <!--<%= f.text_field :Rating %></P>-->
+    <%= f.collection_select :Rating, Review::RATING, :to_s, :to_s, 
+       :include_blank => true
+  %>
+
+  </div>
+
+  <div class="field3">
+    <p><%= f.label :Venue_Name %>
+    <%= f.text_field :Venue_Name %></p>
+  </div>
+
+  <div class="field4">
+    <p><%= f.label :Address %>
+    <%= f.text_area :Address, :rows =>2 %>
+  </div>
+  
+    <div class="field5">
+    <p><%= f.label :City %>
+    <!--<%= f.text_field :City %></p>-->
+
+<%= f.collection_select :City, Review::CITY, :to_s, :to_s, 
+       :include_blank => true
+  %>
+ </div>
+  <div class="field6">
+    <p><%= f.label :Phone %>
+    <%= f.text_field :Phone %></p>
+  </div>
+
+  <div class="field7">
+    <p><%= f.label :Date_of_Visit %>
+    <%= f.date_select :Date_of_Visit %></p>
+  </div>
+
+  <div class="field8">
+    <p><%= f.label :Comment %>
+    <%= f.text_area :Comment, :rows => 4 %></p>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,330 @@
+body { 
+background-color:ffffb5 ;
+ color: #000;
+margin: 0;
+	padding: 0;
+	color: #000; }
+
+body, ol, ul, td {
+font-family:Arial, Helvetica, sans-serif;
+font-size: 12px;
+line-height: 18px;
+}
+
+h1
+{
+	font-size:22px;
+	font-weight:bold;
+	color: #226;
+	 margin-left: 10px;
+
+        border-bottom: 3px dotted #ff4848;
+}
+
+body, h2, h3, h4
+{
+	font-size: 16px;
+	font-weight:normal;
+	 margin-left: 10px;
+}
+
+pre {
+background-color: #ffc284;
+padding: 10px;
+font-size: 11px;
+margin-left: 10px;
+border: solid; 
+}
+a { color: #000;background-color: #ffc284; border-style: solid;border-color: #000; }
+a:visited { color: #000;background-color: #ffc284; border-style: solid;border-color: #000 }
+a:hover { color: #fff; background-color: #ff800d;border: solid; border-color: #000; }
+
+#search
+{
+
+margin-top: -10px;
+	margin-left: 180px;
+	
+}
+.show
+{
+	margin-left: 20px;
+}
+/*
+td
+{
+padding:5px;
+ vertical-align: top;
+}
+
+th
+{
+	padding: 5px;
+	 vertical-align: top;
+}
+*/
+#main {
+	font-family:Arial, Helvetica, sans-serif;
+background-color: ##FFBD82;
+border: solid #000 0px;
+margin: 5em;
+height: 30em;
+padding: 1em;
+}
+
+.field1 
+{
+   margin-bottom: 10px;
+border: 0px solid #006;
+    margin-left: 78px;
+
+}
+
+.field2 
+{
+   margin-bottom: 10px;
+border: 0px solid #006;
+    margin-left: 67px;
+  
+}.field3 
+{
+   margin-bottom: 10px;
+border: 0px solid #006;
+    margin-left: 23px;
+  
+}.field4 
+{
+   margin-bottom: 10px;
+border: 0px solid #006;
+    margin-left: 54px;
+  
+}.field5 
+{
+   margin-bottom: 10px;
+border: 0px solid #006;
+    margin-left: 85px;
+  
+}.field6 
+{
+   margin-bottom: 10px;
+border: 0px solid #006;
+    margin-left: 65px;
+  
+}.field7 
+{
+   margin-bottom: 10px;
+border: 0px solid #006;
+    margin-left: 25px;
+  
+}.field8 
+{
+   margin-bottom: 10px;
+border: 0px solid #006;
+    margin-left: 40px;
+  
+}
+.actions
+{
+	margin-left: 25px;
+	margin-bottom: 20px;
+	
+}
+#notice {
+  color: #c284ff;
+  margin-left: 25px;
+
+
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+
+.container {
+	font-family:Arial, Helvetica, sans-serif;
+	width: 1050px;
+	background-color: ##FFff84;
+	border-style:solid;
+	border-width:0px;
+	padding: 00px 0;
+	margin: 0 auto; 
+	/* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ The header is not given a width. It will extend the full width the layout.  */
+.header {
+
+	background-color: #ff800d;
+	height:180px;
+	/*border-style:solid;
+	border-left:solid;
+	border-right:solid;
+	border-top:solid;*/
+	padding: 10px 0;
+
+}
+.title
+{
+	margin-left: 300px;
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	font-family:Arial, Helvetica, sans-serif;
+	float: left;
+	width: 1050px;
+	height:802px;
+	background-color: #FFff84;
+	padding: 10px 0;
+	overflow: auto;
+	/*border-left:solid;
+	border-right:solid;*/
+	
+}
+/*.notice
+ {
+	background-color: #f0f8ff;
+	padding: 10px 0;
+	width: 1047px;
+	 height: 802px;	
+	border-right:solid;
+	border-bottom: solid;
+	
+}*/
+	
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+
+/* ~~ The footer styles ~~ */
+.footer {
+	font-family:Arial, Helvetica, sans-serif;
+	padding: 10px 0;
+	background-color: #ff800d;
+	border-style:none;
+	height:30px;
+	text-align:center;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+#banner
+{
+	width: 1050px;
+	height: 180px;
+	text-align:center;
+	margin: 0 auto;
+	background-color: 0000ff;
+	
+}
+
+a
+{
+ margin-left: 25px;	
+}
+
+table a:link {
+	color: #000;
+	font-weight:normal;
+	text-decoration:none;
+	text-align: center;
+	border-color: #ffffaa;
+	background-color: #FFffaa;
+}
+table a:visited {
+	color: #000;
+	font-weight:normal;
+	text-align: center;
+	text-decoration:none;
+	border-color: #ffffaa;
+	background-color: #FFffaa;
+}
+table a:active,
+table a:hover {
+	color: #bd5a35;
+	text-decoration:underline;
+}
+table {
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+	font-size:12px;
+	text-shadow: 1px 1px 0px #fff;
+	background:#ffffaa;
+	margin:2px;
+	border:#ccc 0px solid;
+	width: 1040px;
+	margin-top: 25px;
+
+	
+}
+table th {
+	padding:21px 25px 22px 25px;
+	border-top:1px solid #fafafa;
+	border-bottom:1px solid #dfdf00;
+
+	background: #ffc284;
+	
+}
+table th:first-child {
+	text-align: left;
+	padding-left:20px;
+}
+table tr:first-child th:first-child {
+	
+}
+table tr:first-child th:last-child {
+	
+	border-top-right-radius:3px;
+}
+table tr {
+	text-align: center;
+	padding-left:20px;
+}
+table td:first-child {
+	text-align: left;
+	padding-left:20px;
+	border-left: 0;
+	
+}
+table td {
+	padding:18px;
+	border-top: 1px solid dfdf00;
+	border-bottom:1px solid #dfdf00;
+	border-left: 1px solid #dfdf00;
+text-align: center;
+	background: #ffffaa;
+	
+}
+table tr.even td {
+	background: #f6f6f6;
+	
+}
+table tr:last-child td {
+	border-bottom:0;
+}
+table tr:last-child td:first-child {
+	
+	border-bottom-left-radius:3px;
+}
+table tr:last-child td:last-child {
+	
+	border-bottom-right-radius:3px;
+}
+table tr:hover td {
+	background: #FFc284

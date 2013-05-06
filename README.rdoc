@@ -1,0 +1,10 @@
+== Welcome to Rate my Plate
+
+== by Ian Day and  Glen Managh
+
+This is an application to allow users to rate eating establishments 
+
+      
+ 
+
+

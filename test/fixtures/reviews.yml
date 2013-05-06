@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  User: MyString
+  Rating: 9.99
+  Venue_Name: MyString
+  Address: MyText
+  City: MyString
+  Phone: 9.99
+  Date_of_Visit: 2013-04-23
+  Comment: MyText
+
+two:
+  User: MyString
+  Rating: 9.99
+  Venue_Name: MyString
+  Address: MyText
+  City: MyString
+  Phone: 9.99
+  Date_of_Visit: 2013-04-23
+  Comment: MyText

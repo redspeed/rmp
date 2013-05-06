@@ -1,0 +1,46 @@
+<h1>Latest Reviews</h1>
+<br />
+
+<%= link_to '| New Review |', new_review_path %>
+
+<div class="search>"><%= form_tag reviews_path, :method => 'get' do %>
+  
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  
+<% end %>
+</div>
+
+<table>
+  <tr>
+    <!--<th>Member</th>*/-->
+    <th>Rating</th>
+    <th>Venue name</th>
+    <!--<th>Address</th>
+    <th>City</th>
+    <th>Phone</th>-->
+    <th>Date of visit</th>
+    <th>Comment</th>
+    <th></th>
+    
+  </tr>
+
+<% @reviews.each do |review| %>
+  <tr>
+    <!--<td><%= review.Member %></td>-->
+    <td><%= review.Rating %></td>
+    <td><%= review.Venue_Name %></td>
+    <!--<td><%= review.Address %></td>
+    <td><%= review.City %></td>
+    <td><%= review.Phone %></td>-->
+    <td><%= review.Date_of_Visit %></td>
+    <td><%= review.Comment %></td>
+    <td><%= link_to 'Show', review %></td>
+    <!--<td><%= link_to 'Edit', edit_review_path(review) %></td>
+    <td><%= link_to 'Destroy', review, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+  </tr>
+
+<% end %>
+</table>
+
+

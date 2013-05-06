@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="eng" >
+<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="description" content="" />
+		<meta name="author" content="See IT" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		
+		
+  <title>Rate My Plate</title>
+  <%= stylesheet_link_tag  "style", :media => "all" %>
+  
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	
+<div class="container">
+		<div class="header"><!-- end .header -->
+   <img id="banner" src="/images/banner.jpg" >
+ 
+		</div>
+					<div class="sidebar1" >
+ <div id="user_nav">
+  <% if user_signed_in? %>
+    Signed in as <%= current_user.email %>. Not you?
+    <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+  <% else %>
+    <%= link_to "Sign up", new_user_registration_path %> or <%= link_to "sign in", new_user_session_path %>
+  <% end %>
+</div>
+ 
+<% flash.each do |member, msg| %>
+  <%= content_tag :div, msg, :id => "flash_#{member}" %>
+<% end %>  
+<%= yield %>
+
+					<!-- end .sidebar1 --></div>
+    
+												
+  
+		<div class="footer">
+		<p>SEE IT 2013</p>
+		<!-- end .footer --></div>
+		<!-- end .container -->
+	</div>
+
+
+</body>
+</html>
